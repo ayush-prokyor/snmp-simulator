@@ -34,11 +34,13 @@ To start multiple agents on different ports:
 
 ```bash
 cd scripts
+chmod +x install_and_setup.sh
+./install_and_setup.sh
 chmod +x start_agents.sh
 ./start_agents.sh
 ```
 
-This will start three agents on ports 16901, 16902, and 16903.
+This will start three agents on ports 16100, 16101, and 16102.
 
 ### Using the Advanced Agent Manager
 
