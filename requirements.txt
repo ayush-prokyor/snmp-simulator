@@ -1,0 +1,2 @@
+snmpsim>=0.4.0
+pysnmp>=4.4.12
