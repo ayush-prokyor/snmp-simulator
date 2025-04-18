@@ -39,6 +39,7 @@
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$SCRIPT_DIR/.."
 DATA_DIR="$PROJECT_ROOT/data"
+echo "data dir $DATA_DIR"
 
 source "$PROJECT_ROOT/venv/bin/activate"
 
