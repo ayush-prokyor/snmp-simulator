@@ -47,12 +47,12 @@ This will start three agents on ports 16100, 16101, and 16102.
 The manager script provides more flexibility:
 
 ```bash
-python manage_agents.py --num-agents 5 --base-port 16901 --trap-port 16200 --send-traps
+python manage_agents.py --num-agents 5 --base-port 16100 --trap-port 16200 --send-traps
 ```
 
 Options:
 - `--num-agents N`: Start N simulated agents (default: 5)
-- `--base-port P`: Use port numbers starting from P (default: 16901)
+- `--base-port P`: Use port numbers starting from P (default: 16100)
 - `--trap-port P`: Send traps to this port (default: 16200)
 - `--send-traps`: Enable automatic random trap generation
 - `--trap-interval S`: Average seconds between trap events (default: 60)
@@ -67,13 +67,13 @@ python send_trap.py <agent-port> <target-port> <community> <device-name>
 
 Example:
 ```bash
-python send_trap.py 16901 16200 public SimulatedDevice1
+python send_trap.py 16100 16200 public SimulatedDevice1
 ```
 
 ## Testing with Your Node.js App
 
 1. Start the simulated agents
-2. Configure your Node.js app to send requests to ports 16901-1690X
+2. Configure your Node.js app to send requests to ports 16100-1610X
 3. Set up trap receiver in your Node.js app on port 16200
 
 ## Creating Custom Device Data
